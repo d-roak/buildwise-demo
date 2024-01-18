@@ -1,0 +1,10 @@
+name: test
+
+on:
+  pull_request:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: d-roak/buildwise-action@main
