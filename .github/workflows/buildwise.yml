@@ -8,3 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: d-roak/buildwise-action@main
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
