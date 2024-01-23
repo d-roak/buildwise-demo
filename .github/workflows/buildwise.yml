@@ -3,8 +3,13 @@ name: test
 on:
   pull_request:
 
+permissions:
+  pull-requests: write
+
 jobs:
   run:
     runs-on: ubuntu-latest
     steps:
       - uses: d-roak/buildwise-action@main
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
